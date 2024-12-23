@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "ml-hydrological-forecasting"
+version = "0.1.0"
+description = "Hands-on course"
+authors = ["Paul <143228972+paulmunozpauta@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "ml_hydrological_forecasting"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
