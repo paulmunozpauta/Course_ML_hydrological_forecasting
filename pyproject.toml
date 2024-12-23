@@ -8,8 +8,12 @@ readme = "README.md"
 packages = [{include = "ml_hydrological_forecasting"}]
 
 [tool.poetry.dependencies]
-python = "^3.7"
-
+python = ">=3.7,<3.9"
+scikit-learn = "1.0.2"
+numpy = "^1.23.0"
+pandas = "^1.4.0"
+matplotlib = "^3.5.0"
+jupyter = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core"]
