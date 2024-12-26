@@ -1,4 +1,4 @@
-<h1>ML Hydrological Forecasting</h1>
+<h1>Machine Learning Hydrological Forecasting</h1>
 
 <p>This repository provides hands-on Jupyter Notebooks for building machine learning models for hydrological forecasting. The project environment is managed using Poetry to ensure consistency across platforms.</p>
 
@@ -26,17 +26,60 @@ ml-hydrological-forecasting/
   <li><strong>Install Python</strong>:
     <ul>
       <li>Download Python (version 3.7.16 recommended) from <a href="https://www.python.org/" target="_blank">python.org</a>.</li>
-      <li>Make sure to check the box to <strong>Add Python to PATH</strong> during installation.</li>
+      <li>Make sure to check the box to <strong>Add Python to PATH</strong> during installation (Windows users only).</li>
     </ul>
   </li>
-  <li><strong>Install Poetry</strong>:
+</ol>
+
+<hr>
+
+<h2>🏗️ Step 1: Create a New Python Environment</h2>
+
+<p>To isolate your project environment and ensure compatibility, follow these steps:</p>
+
+<h3>For macOS and Linux Users</h3>
+<ol>
+  <li>Open a terminal.</li>
+  <li>Install Python 3.7.16 if not already installed. On Linux, use:
+    <pre><code>sudo apt update
+sudo apt install python3.7 python3.7-venv
+    </code></pre>
+  </li>
+  <li>Create a new virtual environment named <code>IUPWARE</code>:
+    <pre><code>python3.7 -m venv IUPWARE</code></pre>
+  </li>
+  <li>Activate the virtual environment:
+    <pre><code>source IUPWARE/bin/activate</code></pre>
+  </li>
+</ol>
+
+<h3>For Windows Users</h3>
+<ol>
+  <li>Open a Command Prompt or PowerShell.</li>
+  <li>Install Python 3.7.16 if not already installed. Use the official Python installer from <a href="https://www.python.org/" target="_blank">python.org</a>.</li>
+  <li>Create a new virtual environment named <code>IUPWARE</code>:
+    <pre><code>python -m venv IUPWARE</code></pre>
+  </li>
+  <li>Activate the virtual environment:
+    <pre><code>IUPWARE\Scripts\activate</code></pre>
+  </li>
+</ol>
+
+<hr>
+
+<h2>🏗️ Step 2: Install Poetry</h2>
+<ol>
+  <li>Once the virtual environment is activated, install Poetry:
     <pre><code>pip install poetry</code></pre>
-    Verify installation:
+  </li>
+  <li>Verify the installation:
     <pre><code>poetry --version</code></pre>
   </li>
 </ol>
 
 <hr>
+
+<h2>🏗️ Step 3: Install Project Dependencies</h2>
 
 <h3>Option 1: Clone the Repository</h3>
 <ol>
@@ -48,8 +91,6 @@ cd ml-hydrological-forecasting
   </li>
 </ol>
 
-<hr>
-
 <h3>Option 2: Copy the Folder</h3>
 <ol>
   <li>Download or copy the project folder from GitHub to your computer.</li>
@@ -58,34 +99,19 @@ cd ml-hydrological-forecasting
   </li>
 </ol>
 
-<hr>
-
-<h2>🏗️ Set Up the Environment</h2>
-
-<h3>For macOS and Linux Users</h3>
+<h3>Install Dependencies</h3>
 <ol>
-  <li>Install the project dependencies:
+  <li>Install the dependencies listed in <code>pyproject.toml</code>:
     <pre><code>poetry install</code></pre>
   </li>
-  <li>Activate the environment:
-    <pre><code>poetry shell</code></pre>
-  </li>
-</ol>
-
-<h3>For Windows Users</h3>
-<ol>
-  <li>Install the project dependencies:
-    <pre><code>poetry install</code></pre>
-    <p>If you encounter issues, make sure you’ve added Python to your PATH during installation.</p>
-  </li>
-  <li>Activate the environment:
+  <li>Activate the Poetry-managed environment:
     <pre><code>poetry shell</code></pre>
   </li>
 </ol>
 
 <hr>
 
-<h2>📊 Run Jupyter Notebooks</h2>
+<h2>📊 Step 4: Run Jupyter Notebooks</h2>
 <ol>
   <li>Start the Jupyter Notebook server:
     <pre><code>jupyter notebook</code></pre>
