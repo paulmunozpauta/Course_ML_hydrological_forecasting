@@ -23,45 +23,37 @@ ml-hydrological-forecasting/
 
 <h3>🛠️ Prerequisites</h3>
 <ol>
-  <li><strong>Install Python</strong>:
+  <li><strong>Install Miniconda or Anaconda</strong>:
     <ul>
-      <li>Download Python (version 3.7.16 recommended) from <a href="https://www.python.org/" target="_blank">python.org</a>.</li>
-      <li>Make sure to check the box to <strong>Add Python to PATH</strong> during installation (Windows users only).</li>
+      <li>Download <a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank">Miniconda</a> (lightweight) or <a href="https://www.anaconda.com/" target="_blank">Anaconda</a> (full version).</li>
+      <li>Follow the installation instructions for your operating system (macOS, Linux, or Windows).</li>
+      <li>Verify that Conda is installed by running:
+        <pre><code>conda --version</code></pre>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Install Python 3.7.16</strong>:
+    <ul>
+      <li>If you have Conda installed, create an environment with Python 3.7.16 using:
+        <pre><code>conda create --name IUPWARE python=3.7</code></pre>
+      </li>
     </ul>
   </li>
 </ol>
 
 <hr>
 
-<h2>🏗️ Step 1: Create a New Python Environment</h2>
+<h2>🏗️ Step 1: Create a Conda Environment</h2>
 
 <p>To isolate your project environment and ensure compatibility, follow these steps:</p>
 
-<h3>For macOS and Linux Users</h3>
+<h3>For macOS, Linux, and Windows Users</h3>
 <ol>
-  <li>Open a terminal.</li>
-  <li>Install Python 3.7.16 if not already installed. On Linux, use:
-    <pre><code>sudo apt update
-sudo apt install python3.7 python3.7-venv
-    </code></pre>
+  <li>Create a new Conda environment named <code>IUPWARE</code> with Python 3.7:
+    <pre><code>conda create --name IUPWARE python=3.7</code></pre>
   </li>
-  <li>Create a new virtual environment named <code>IUPWARE</code>:
-    <pre><code>python3.7 -m venv IUPWARE</code></pre>
-  </li>
-  <li>Activate the virtual environment:
-    <pre><code>source IUPWARE/bin/activate</code></pre>
-  </li>
-</ol>
-
-<h3>For Windows Users</h3>
-<ol>
-  <li>Open a Command Prompt or PowerShell.</li>
-  <li>Install Python 3.7.16 if not already installed. Use the official Python installer from <a href="https://www.python.org/" target="_blank">python.org</a>.</li>
-  <li>Create a new virtual environment named <code>IUPWARE</code>:
-    <pre><code>python -m venv IUPWARE</code></pre>
-  </li>
-  <li>Activate the virtual environment:
-    <pre><code>IUPWARE\Scripts\activate</code></pre>
+  <li>Activate the environment:
+    <pre><code>conda activate IUPWARE</code></pre>
   </li>
 </ol>
 
@@ -69,7 +61,7 @@ sudo apt install python3.7 python3.7-venv
 
 <h2>🏗️ Step 2: Install Poetry</h2>
 <ol>
-  <li>Once the virtual environment is activated, install Poetry:
+  <li>Install Poetry in the Conda environment:
     <pre><code>pip install poetry</code></pre>
   </li>
   <li>Verify the installation:
