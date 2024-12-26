@@ -2,7 +2,7 @@
 name = "ml-hydrological-forecasting"
 version = "0.1.0"
 description = "Hands-on course"
-authors = ["Paul <143228972+paulmunozpauta@users.noreply.github.com>"]
+authors = ["Paul <paul.munoz@vub.be"]
 license = "MIT"
 readme = "README.md"
 
