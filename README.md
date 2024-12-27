@@ -108,7 +108,13 @@ cd ml-hydrological-forecasting
   <li>Start the Jupyter Notebook server:
     <pre><code>jupyter notebook</code></pre>
   </li>
-  <li>Open the notebook file (e.g., <code>example_notebook.ipynb</code>) in your browser and run the cells.</li>
+  <li>Open the notebook files in your browser and run the cells. The repository includes the following three Jupyter Notebooks:
+    <ul>
+      <li><code>1_ML_introduction.ipynb</code>: Introduction to Machine Learning, covering foundational concepts and simple ML models.</li>
+      <li><code>2_Satellite_precipitation.ipynb</code>: Working with satellite precipitation data, including preprocessing and visualization.</li>
+      <li><code>3_ML_forecasting.ipynb</code>: Advanced Machine Learning for hydrological forecasting, including model training and evaluation.</li>
+    </ul>
+  </li>
 </ol>
 
 <hr>
@@ -129,13 +135,23 @@ poetry install
 <hr>
 
 <h2>⚙️ What Does This Project Use?</h2>
-<p>The environment is managed using Poetry. The dependencies are:</p>
+<p>The environment is managed using Poetry, which ensures consistency and ease of dependency management. The dependencies used in this project are:</p>
+
 <ul>
   <li><code>scikit-learn 1.0.2</code>: Machine learning algorithms</li>
   <li><code>numpy ^1.21.5</code>: Numerical computations</li>
   <li><code>pandas ^1.3.5</code>: Data manipulation</li>
   <li><code>matplotlib ^3.5.3</code>: Data visualization</li>
   <li><code>jupyter ^1.0.0</code>: Interactive notebooks</li>
+  <li><code>seaborn ^0.11.2</code>: Statistical data visualization</li>
+  <li><code>openpyxl ^3.0.9</code>: Excel file handling</li>
+  <li><code>descartes ^1.1.0</code>: Geometric data visualization</li>
+  <li><code>shapely ^1.8.4</code>: Geometric objects and operations</li>
+  <li><code>geopandas ^0.9.0</code>: Geospatial data manipulation</li>
+  <li><code>rasterio ^1.2.10</code>: Raster data handling</li>
+  <li><code>rioxarray ^0.9.1</code>: Raster data manipulation with xarray</li>
+  <li><code>xarray ^0.20.1</code>: Multidimensional arrays</li>
+  <li><code>h5py ^2.10.0</code>: HDF5 file handling</li>
 </ul>
 <p>All dependencies are listed in the <code>pyproject.toml</code> file.</p>
 
