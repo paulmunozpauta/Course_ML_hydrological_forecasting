@@ -32,9 +32,9 @@ ml-hydrological-forecasting/
       </li>
     </ul>
   </li>
-  <li><strong>Install Python 3.7.16</strong>:
+  <li><strong>Install Python 3.11</strong>:
     <ul>
-      <li>If you have Conda installed, create an environment with Python 3.7.16 using:
+      <li>If you have Conda installed, create an environment with Python 3.11 using:
         <pre><code>conda create --name IUPWARE python=3.7</code></pre>
       </li>
     </ul>
@@ -49,8 +49,8 @@ ml-hydrological-forecasting/
 
 <h3>For macOS, Linux, and Windows Users</h3>
 <ol>
-  <li>Create a new Conda environment named <code>IUPWARE</code> with Python 3.7:
-    <pre><code>conda create --name IUPWARE python=3.7</code></pre>
+  <li>Create a new Conda environment named <code>IUPWARE</code> with Python 3.11:
+    <pre><code>conda create --name IUPWARE python=3.11</code></pre>
   </li>
   <li>Activate the environment:
     <pre><code>conda activate IUPWARE</code></pre>
@@ -96,9 +96,6 @@ cd ml-hydrological-forecasting
   <li>Install the dependencies listed in <code>pyproject.toml</code>:
     <pre><code>poetry install</code></pre>
   </li>
-  <li>Activate the Poetry-managed environment:
-    <pre><code>poetry shell</code></pre>
-  </li>
 </ol>
 
 <hr>
@@ -138,22 +135,24 @@ poetry install
 <p>The environment is managed using Poetry, which ensures consistency and ease of dependency management. The dependencies used in this project are:</p>
 
 <ul>
-  <li><code>scikit-learn 1.0.2</code>: Machine learning algorithms</li>
-  <li><code>numpy ^1.21.5</code>: Numerical computations</li>
-  <li><code>pandas ^1.3.5</code>: Data manipulation</li>
-  <li><code>matplotlib ^3.5.3</code>: Data visualization</li>
+  <li><code>scikit-learn ^1.3.0</code>: Machine learning algorithms</li>
+  <li><code>numpy ^1.25.0</code>: Numerical computations</li>
+  <li><code>pandas ^2.0.3</code>: Data manipulation</li>
+  <li><code>matplotlib ^3.8.0</code>: Data visualization</li>
   <li><code>jupyter ^1.0.0</code>: Interactive notebooks</li>
-  <li><code>seaborn ^0.11.2</code>: Statistical data visualization</li>
-  <li><code>openpyxl ^3.0.9</code>: Excel file handling</li>
+  <li><code>seaborn ^0.12.2</code>: Statistical data visualization</li>
+  <li><code>openpyxl ^3.1.2</code>: Excel file handling</li>
   <li><code>descartes ^1.1.0</code>: Geometric data visualization</li>
-  <li><code>shapely ^1.8.4</code>: Geometric objects and operations</li>
-  <li><code>geopandas ^0.9.0</code>: Geospatial data manipulation</li>
-  <li><code>rasterio ^1.2.10</code>: Raster data handling</li>
-  <li><code>rioxarray ^0.9.1</code>: Raster data manipulation with xarray</li>
-  <li><code>xarray ^0.20.1</code>: Multidimensional arrays</li>
-  <li><code>h5py ^2.10.0</code>: HDF5 file handling</li>
+  <li><code>shapely ^2.0.1</code>: Geometric objects and operations</li>
+  <li><code>geopandas ^0.14.1</code>: Geospatial data manipulation</li>
+  <li><code>rasterio ^1.3.9</code>: Raster data handling</li>
+  <li><code>rioxarray ^0.15.0</code>: Raster data manipulation with xarray</li>
+  <li><code>xarray ^2023.6.0</code>: Multidimensional arrays</li>
+  <li><code>h5py ^3.10.0</code>: HDF5 file handling</li>
 </ul>
+
 <p>All dependencies are listed in the <code>pyproject.toml</code> file.</p>
+
 
 <hr>
 
