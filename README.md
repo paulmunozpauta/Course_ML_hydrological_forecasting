@@ -64,7 +64,7 @@ ml-hydrological-forecasting/
   <li>Install Poetry in the Conda environment:
     <pre><code>pip install poetry</code></pre>
   </li>
-  <li>Verify the installation:
+  <li>If succesful, verify the installation:
     <pre><code>poetry --version</code></pre>
   </li>
 </ol>
@@ -118,7 +118,7 @@ cd ml-hydrological-forecasting
 
 <h2>❓ Troubleshooting</h2>
 <ul>
-  <li><strong>Python Version Issues</strong>: Make sure you have Python 3.7.16 installed. Check your version:
+  <li><strong>Python Version Issues</strong>: Make sure you have Python 3.11 installed. Check your version:
     <pre><code>python --version</code></pre>
   </li>
   <li><strong>Dependencies Not Installing</strong>: If Poetry isn’t installing the libraries, clear the Poetry cache and try again:
