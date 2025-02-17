@@ -50,10 +50,10 @@ ml-hydrological-forecasting/
 <h3>For macOS, Linux, and Windows Users</h3>
 <ol>
   <li>Create a new Conda environment named <code>ML_forecasting</code> with Python 3.11:
-    <pre><code>conda create --name IUPWARE python=3.11</code></pre>
+    <pre><code>conda create --name ML_forecasting python=3.11</code></pre>
   </li>
   <li>Activate the environment:
-    <pre><code>conda activate IUPWARE</code></pre>
+    <pre><code>conda activate ML_forecasting</code></pre>
   </li>
 </ol>
 
